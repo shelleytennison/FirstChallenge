@@ -20,7 +20,7 @@ namespace FirstChallenge.Controllers
         {
             var comics = ComicBookManager.GetComicBooks();
             var comic = comics.FirstOrDefault(p => p.ComicBookId == id);
-            return View(comics);
+            return View(comic);
         }
     }
 }
